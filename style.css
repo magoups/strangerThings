@@ -1,0 +1,371 @@
+/* font-family: 'Oswald', sans-serif;
+font-family: 'ZCOOL KuaiLe', cursive; 
+color: 14110f; gris foncé
+color: FFFCF2; blanc cassé
+color: CCC5B9; beige
+color: 403D39; gris moyen 
+color: EF3C2D; rouge
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ /* ---------------------------------------- *
+ *             animation vibrate-1          *
+ * ---------------------------------------- */
+
+ @-webkit-keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  @keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }  
+
+
+/* ------------------------------------ BODY -------------------------------------------- */
+
+body{
+    background-color: #14110f;
+    color: #FFFCF2;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1{
+    font-size: 96px;
+}
+
+h1, h2{
+    font-family: 'ZCOOL KuaiLe', cursive;
+    color:transparent;
+    padding: 1% 0px;
+    -webkit-text-stroke: 2px #EF3C2D;
+    text-align: center;
+}
+
+h2{
+    font-size: 80px;
+}
+
+.containerTitle{
+    display: flex;
+    justify-content: flex-end;
+    margin: -2% 10%;
+}
+
+.border{
+    border-top: 6px solid #EF3C2D;
+    border-bottom: 6px solid #EF3C2D;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #FFFCF2;
+    cursor: pointer;
+}
+section{
+    margin-bottom: 7%;
+}
+
+header, header nav, .synopsis, .container, .saison, .containerVideo{          /* largeur totale*/
+    width: 100%;
+}
+
+header, .saison{                      /* image full ecran*/
+    height: 100vh; 
+}
+
+/* ----------------------------------- HEADER ------------------------------------------- */
+
+header{
+    background: url('image/wallpaper.jpeg') no-repeat 0px -150px / cover ;  
+    margin-bottom: 100px;
+} 
+
+header a:hover{
+    color: #EF3C2D;
+}
+
+header nav, .containerOne, .containerTwo{
+    height: 75px;
+    display: flex;
+}
+
+header nav{
+    font-size: 37px;
+    font-weight: bold;
+    align-items: flex-start;
+    justify-content: flex-start; 
+    gap: 20px;
+}
+header nav div div{
+    padding: 20px 
+}
+
+/* ----------------------------------- SYNOPSIS ------------------------------------------- */
+
+/* .synopsis p{
+    padding: 0px 2% 0px 2%;
+    font-size: 25px;
+    font-weight: lighter;
+    margin-top: -2.5%;
+}
+
+.synopsis p::first-letter{
+    font-size: 80px;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    color: #EF3C2D;
+} */
+
+/* ----------------------------------- PERSONNAGES ------------------------------------------- */
+
+/* .container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.photo, .nom, .description{
+    margin: 5px;
+    border: 1px solid white;
+}
+
+.size, .description{
+    height: 130px;
+}
+
+.size{
+    width: 130px;
+}
+
+.description, .nom{
+    display: flex;
+    align-items: center;
+}
+
+.description{
+    width: 1137px;
+    justify-content: flex-start;
+}
+
+.description p, .nom{
+    font-size: 23px;
+}
+
+.description p{
+    padding-left: 10px;
+    font-weight: lighter;
+}
+
+.nom{
+    justify-content: center;
+} */
+
+/* -------------------------- IMAGES -------------------------- */
+
+/* .eleven .photo{
+    background: url(image/Eleven.jpeg) no-repeat center / cover;  
+}
+
+.dustin .photo{
+    background: url(image/Dustin.jpeg) no-repeat center / cover;  
+}
+
+.mike .photo{
+    background: url(image/mikeWheeler.jpeg) no-repeat center / cover;  
+}
+
+.will .photo{
+    background: url(image/Noah.jpeg) no-repeat center / cover;  
+}
+
+.lucas .photo{
+    background: url(image/lucas.jpeg) no-repeat center / cover;  
+}
+
+.joyce .photo{
+    background: url(image/joyceByers.jpeg) no-repeat center / cover;  
+} */
+
+/* ---------------------------------- SAISON ----------------------------------- */
+
+/* .saison {
+    background:url(image/wallpaper2.jpeg) no-repeat center / cover;
+}
+
+#titleSaison{
+    padding-top: 15px;
+}
+
+.containerVideo{
+    height: 78vh; 
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+figure{
+    width: 27.8%;
+    height: 300px;
+}
+
+iframe{
+    width: 400px;   
+    height: 250px;
+}
+
+figcaption{
+    font-size: 30px;
+} 
+
+figcaption:hover{
+    color: #EF3C2D;
+}  */
+
+/* ---------------------------------- CONTACT ----------------------------------- */
+
+/* form{
+    text-align: center;
+}
+
+input, textarea{
+    background-color: #CCC5B9;
+    border-radius: 5px;
+    width: 495px;
+    margin: 5px;
+    border:none;
+    padding: 12px 20px;
+    color: #252422;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+input[type=text] {
+    height: 51px; 
+  }
+
+textarea {
+    height: 148px;
+    resize: none;
+  }
+
+input[type=submit] {
+      background: transparent;
+      border: 1px solid #CCC5B9;
+      width: 151px;
+      color: #CCC5B9;
+      font-weight: bold;
+  } 
+
+input[type=text]:hover, textarea:hover{
+    border: 2px solid rgba(233, 63, 51, .5);
+    color: rgba(233, 63, 51, .5);
+}
+
+input[type=submit]:hover{
+    background: rgba(233, 63, 51, .5); 
+    -webkit-animation: vibrate-1 0.3s linear infinite both;
+    animation: vibrate-1 0.3s linear infinite both;
+
+}  */
+
+/* ---------------------------------- FOOTER ----------------------------------- */
+/* footer{
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+    font-size: 25px;
+}
+
+footer a p{
+    font-size: 20px;
+    color: rgba(233, 63, 51, .5);
+}
+
+footer a:link, footer a:visited {
+    text-decoration: none;
+    color: rgba(233, 63, 51, .5);
+    cursor: pointer;
+} */
+
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------ RESPONSIVE ---------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+
+@media (max-width:1000px) {
+
+    nav{
+        flex-direction: column; 
+    }
+
+    nav p{
+        font-size: 3vh;
+        font-weight: 400;
+        margin-left: 5%;
+    }
+
+    h1{
+        font-size: 6vh;
+        width: 40%;
+    }
+
+    h1, h2{
+        -webkit-text-stroke: 1px #EF3C2D;
+        text-align: center;
+    }
+    
+    
+}
